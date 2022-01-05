@@ -1057,7 +1057,9 @@
     </enums>
 
     <enums namespace="EGL" start="0x34E0" end="0x34EF" vendor="Huawei" comment="Reserved for Openharmony OS (via github pull request)">
-            <unused start="0x34E0" end="0x34EF"/>
+        <enum value="0x34E0" name="EGL_PLATFORM_OHOS_KHR"/>
+        <enum value="0x34E1" name="EGL_NATIVE_BUFFER_OHOS"/>
+            <unused start="0x34E2" end="0x34EF"/>
     </enums>
 <!-- Please remember that new enumerant allocations must be obtained by
      request to the Khronos API registrar (see comments at the top of this
@@ -3512,6 +3514,16 @@
         <extension name="EGL_EXT_device_drm_render_node" supported="egl">
             <require>
                 <enum name="EGL_DRM_RENDER_NODE_FILE_EXT"/>
+            </require>
+        </extension>
+        <extension name="EGL_KHR_platform_ohos" supported="egl">
+            <require>
+                <enum name="EGL_PLATFORM_OHOS_KHR"/>
+            </require>
+        </extension>
+        <extension name="EGL_OHOS_image_native_buffer" supported="egl">
+            <require>
+                <enum name="EGL_NATIVE_BUFFER_OHOS"/>
             </require>
         </extension>
     </extensions>
