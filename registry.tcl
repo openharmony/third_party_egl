@@ -762,4 +762,14 @@ extension EGL_EXT_surface_compression {
     flags       public
     filename    extensions/EXT/EGL_EXT_surface_compression.txt
 }
-# Next free extension number: 148
+extension EGL_OHOS_image_native_buffer {
+    number      148
+    flags       public
+    filename    extensions/OH/EGL_OHOS_image_native_buffer.txt
+}
+extension EGL_KHR_platform_ohos {
+    number      149
+    flags       public
+    filename    extensions/KHR/EGL_KHR_platform_ohos.txt
+}
+# Next free extension number: 150

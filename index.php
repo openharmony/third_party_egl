@@ -361,6 +361,10 @@ include_once("../../assets/static_pages/khr_page_top.php");
 </li>
 <li value=147> <a href="extensions/EXT/EGL_EXT_surface_compression.txt">EGL_EXT_surface_compression</a>
 </li>
+<li value=148> <a href="extensions/OH/EGL_OHOS_image_native_buffer.txt">EGL_OHOS_image_native_buffer</a>
+</li>
+<li value=149> <a href="extensions/KHR/EGL_KHR_platform_ohos.txt">EGL_KHR_platform_ohos</a>
+</li>
 </ol>
 
 <h6> Providing Feedback on the Registry </h6>

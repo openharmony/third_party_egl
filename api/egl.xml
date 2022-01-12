@@ -1055,6 +1055,12 @@
     <enums namespace="EGL" start="0x34D0" end="0x34DF" vendor="ANGLE" comment="Reserved for Peng Huang - ANGLE (via github pull request)">
             <unused start="0x34D0" end="0x34DF"/>
     </enums>
+
+    <enums namespace="EGL" start="0x34E0" end="0x34EF" vendor="Huawei" comment="Reserved for Openharmony OS (via github pull request)">
+        <enum value="0x34E0" name="EGL_PLATFORM_OHOS_KHR"/>
+        <enum value="0x34E1" name="EGL_NATIVE_BUFFER_OHOS"/>
+            <unused start="0x34E2" end="0x34EF"/>
+    </enums>
 <!-- Please remember that new enumerant allocations must be obtained by
      request to the Khronos API registrar (see comments at the top of this
      file) File requests in the Khronos Bugzilla, EGL project, Registry
@@ -1064,8 +1070,8 @@
 
 <!-- Reservable for future use. To generate a new range, allocate multiples
      of 16 starting at the lowest available point in this block. -->
-    <enums namespace="EGL" start="0x34E0" end="0x3FFF" vendor="KHR" comment="Reserved for future use">
-            <unused start="0x34E0" end="0x3FFF"/>
+    <enums namespace="EGL" start="0x34F0" end="0x3FFF" vendor="KHR" comment="Reserved for future use">
+            <unused start="0x34F0" end="0x3FFF"/>
     </enums>
 
     <enums namespace="EGL" start="0x8F70" end="0x8F7F" vendor="HI" comment="For Mark Callow, Khronos bug 4055. Shared with GL.">
@@ -3508,6 +3514,16 @@
         <extension name="EGL_EXT_device_drm_render_node" supported="egl">
             <require>
                 <enum name="EGL_DRM_RENDER_NODE_FILE_EXT"/>
+            </require>
+        </extension>
+        <extension name="EGL_KHR_platform_ohos" supported="egl">
+            <require>
+                <enum name="EGL_PLATFORM_OHOS_KHR"/>
+            </require>
+        </extension>
+        <extension name="EGL_OHOS_image_native_buffer" supported="egl">
+            <require>
+                <enum name="EGL_NATIVE_BUFFER_OHOS"/>
             </require>
         </extension>
     </extensions>
