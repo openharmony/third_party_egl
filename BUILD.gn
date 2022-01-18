@@ -15,7 +15,7 @@ config("libEGL_public_config") {
   include_dirs = [ "api" ]
   defines = [
     "ENABLE_EGL",
-    "EGL_NO_X11",
+    "OHOS_PLATFORM",
   ]
 }
 
