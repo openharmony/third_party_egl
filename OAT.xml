@@ -55,22 +55,21 @@ Note:If the text contains special characters, please escape them according to th
 -->
 <configuration>
     <oatconfig>
-        <licensefile>COPYING</licensefile>
-	<filefilterlist>
-                <filefilter name="defaultFilter" desc="Files not to check">
+        <licensefile>sdk/docs/man/xhtml/copyright.inc.xsl</licensefile>
+	    <filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
             </filefilter>
-            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility, license header policies">
                 <filteritem type="filename" name="README.OpenSource"/>
                 <filteritem type="filename" name="README"/>
-                <filteritem type="filename" name="sdk/docs/man/xhtml/copyright.inc.xsl"  desc=""/>
-                <filteritem type="filename" name="sdk/docs/man/xhtml/ctop.xsl"  desc=""/>
-                <filteritem type="filename" name="api/KHR/khrplatform.h"  desc=""/>
-                <filteritem type="filename" name="specs/legal.xhtml"  desc=""/>
-                <filteritem type="filename" name="sdk/docs/man/db4-upgrade.xsl"  desc=""/>
+                <filteritem type="filepath" name="sdk/docs/man/xhtml/copyright.inc.xsl"  desc=""/>
+                <filteritem type="filepath" name="sdk/docs/man/xhtml/ctop.xsl"  desc=""/>
+                <filteritem type="filepath" name="api/KHR/khrplatform.h"  desc=""/>
+                <filteritem type="filepath" name="specs/legal.xhtml"  desc=""/>
+                <filteritem type="filepath" name="sdk/docs/man/db4-upgrade.xsl"  desc=""/>
             </filefilter>
-            <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies" >
-                <filteritem type="filename" name="README.OpenSource"/>
-                <filteritem type="filename" name="README"/>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+                <filteritem type="filename" name="*.pdf|*.png|*.jpg|*.gif" desc="binary not used"/>
             </filefilter>
         </filefilterlist>
     </oatconfig>
