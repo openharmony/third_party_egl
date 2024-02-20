@@ -27,7 +27,19 @@
         },
         "build": {
             "sub_component": [],
-            "inner_kits": [],
+            "inner_kits": [
+                {
+                    "name": "//third_party/EGL:libEGL",
+                    "header": {
+                      "header_files": [
+                        "egl.h",
+                        "eglext.h",
+                        "eglplatform.h"
+                      ],
+                      "header_base": "//third_party/EGL/api/EGL"
+                    }
+                }
+            ],
             "test": []
         }
     }
