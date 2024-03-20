@@ -11,6 +11,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import("//build/ohos.gni")
+
 config("libEGL_public_config") {
   include_dirs = [ "api" ]
   defines = [ "ENABLE_EGL" ]
@@ -19,6 +21,6 @@ config("libEGL_public_config") {
   }
 }
 
-group("libEGL") {
+ohos_source_set("libEGL") {
   public_configs = [ ":libEGL_public_config" ]
 }
