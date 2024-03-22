@@ -10,7 +10,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-import("//build/ohos.gni")
+
 config("libEGL_public_config") {
   include_dirs = [ "api" ]
   defines = [ "ENABLE_EGL" ]
@@ -19,6 +19,6 @@ config("libEGL_public_config") {
   }
 }
 
-ohos_static_library("libEGL") {
+group("libEGL") {
   public_configs = [ ":libEGL_public_config" ]
 }
