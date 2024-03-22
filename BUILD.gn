@@ -21,6 +21,6 @@ config("libEGL_public_config") {
   }
 }
 
-ohos_source_set("libEGL") {
+ohos_static_library("libEGL") {
   public_configs = [ ":libEGL_public_config" ]
 }
