@@ -1,6 +1,6 @@
 [
     {
-        "Name": "EGL",
+        "Name": "Khronos Group - EGL",
         "License": "Apache-2.0",
         "License File": "LICENSE",
         "Version Number": "1.5",
